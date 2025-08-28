@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="rpc.js"></script>
+    <style>
+        body{
+            background-color:goldenrod;
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 1px;
+        }
+        h3{
+            margin-bottom: 3%;
+        }
+        div{
+            margin-bottom: 5%;
+            text-align: center;
+        }
+
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <marquee><h1>Rock paper Scissor</h1></marquee>
+    <h3 id="result">rules :  selects your option to play</h3>
+    <div><h1>CPU choose : </h1><img id="cpu_img"/></div>
+    <div><h1>Select your option :</h1>
+    <img id="rock" onclick=random(this.id) src="rock.png">
+    <img id="paper" onclick=random(this.id) src="paper.png">
+    <img id="scissor" onclick=random(this.id) src="scissor.png">
+</div>
+
+</body>
+</html>
